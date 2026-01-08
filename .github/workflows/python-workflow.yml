@@ -1,7 +1,7 @@
 name: CI
 
 on:
-  push:  
+  push: null
 
 jobs:
   build:
@@ -13,9 +13,6 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: 3.11
-
-    - name: create requirements file
-      run:  echo " " > requirements.txt
 
     - name: Install dependencies
       run: |
